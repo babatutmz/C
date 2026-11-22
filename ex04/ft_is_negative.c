@@ -6,7 +6,20 @@
 /*   By: mebabatu <mebabatu@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/22 23:44:26 by mebabatu          #+#    #+#             */
-/*   Updated: 2026/11/22 23:44:27 by mebabatu         ###   ########.fr       */
+/*   Updated: 2026/11/23 01:04:00 by mebabatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+
+void	ft_is_negative(int n)
+{
+	if (n < 0)
+	{
+		write(1, "N", 1);
+	}
+	else
+	{
+		write(1, "P", 1);
+	}
+}
